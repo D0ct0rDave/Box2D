@@ -26,13 +26,13 @@ solution "Box2D"
 		vpaths { [""] = "Box2D" }
 		includedirs { "." }
 		
-	if os.get == "windows" then
+	--if os.get == "windows" then
 		project "FreeGLUT"
 			kind "StaticLib"
 			language "C"
 			files { "freeglut/*.h", "freeglut/*.c" }
 			vpaths { ["Headers"] = "**.h",  ["Sources"] = "**.c" }
-	end
+	--end
 	
 	project "GLUI"
 		kind "StaticLib"
