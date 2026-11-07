@@ -20,6 +20,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cstdarg>
+#include <stdarg.h>
 
 b2Version b2_version = {2, 2, 1};
 

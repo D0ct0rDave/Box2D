@@ -315,16 +315,16 @@ struct b2Rot
 	explicit b2Rot(float32 angle)
 	{
 		/// TODO_ERIN optimize
-		s = sinf(angle);
-		c = cosf(angle);
+		s = CFEMath::rSin(angle);
+		c = CFEMath::rCos(angle);
 	}
 
 	/// Set using an angle in radians.
 	void Set(float32 angle)
 	{
 		/// TODO_ERIN optimize
-		s = sinf(angle);
-		c = cosf(angle);
+		s = CFEMath::rSin(angle);
+		c = CFEMath::rCos(angle);
 	}
 
 	/// Set to the identity rotation
