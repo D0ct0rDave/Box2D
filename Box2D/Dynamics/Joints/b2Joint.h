@@ -38,7 +38,9 @@ enum b2JointType
 	e_wheelJoint,
     e_weldJoint,
 	e_frictionJoint,
-	e_ropeJoint
+	e_ropeJoint,
+
+	e_b2JointType_max = 0xffffffff
 };
 
 enum b2LimitState
@@ -46,7 +48,9 @@ enum b2LimitState
 	e_inactiveLimit,
 	e_atLowerLimit,
 	e_atUpperLimit,
-	e_equalLimits
+	e_equalLimits,
+
+	e_b2LimitState_max = 0xffffffff
 };
 
 struct b2Jacobian
